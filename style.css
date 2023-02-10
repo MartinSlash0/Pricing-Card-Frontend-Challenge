@@ -15,8 +15,6 @@ h2, h4, p{
 }
 
 #card{
-  width: 600px;
-  height: 400px;
   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
   border-radius: 5px;
   overflow: hidden;
@@ -41,16 +39,16 @@ h2, h4, p{
   opacity: 0.7;
 }
 #bottom-block{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 55%;
 }
 #bottom-left-block{
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
   height: 100%;
   padding: 30px;
   background-color: #2ab2af;
+  flex-basis: 50%;
 }
 #bottom-left-block h4{
   color: white;
@@ -58,19 +56,17 @@ h2, h4, p{
   font-weight: 700;
 }
 #price-month{
-    margin-bottom: 10px
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 #price{
-  display: inline-block;
-  vertical-align: middle;
   color: white;
   font-weight: 700;
   font-size: 2rem;
   margin-right: 10px;
 }
 #month{
-  display: inline-block;
-  vertical-align: middle;
   color: #e5eff5;
   opacity: 0.5;
 }
@@ -96,13 +92,10 @@ h2, h4, p{
   transform: scale(1.01);
 }
 #bottom-right-block{
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  height: 100%;
   padding: 30px;
   background-color: #2ebfbd;
   color: white;
+  flex-basis: 50%;
 }
 #bottom-right-block h4{
   font-weight: 700;
@@ -114,8 +107,12 @@ h2, h4, p{
   opacity: 0.7;
 }
 
-@media (max-width: 655px) {
-  #bottom-left-block, #bottom-right-block, #card{
-    width: 100%;
-    height: auto;
+@media (min-width: 576px){
+  #card {
+    width: 525px;
+    height: 400px;
+  }
+  #bottom-block{
+    flex-direction: row;
+  }
 }
