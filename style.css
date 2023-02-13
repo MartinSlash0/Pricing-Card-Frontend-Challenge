@@ -48,7 +48,6 @@ h2, h4, p{
   height: 100%;
   padding: 30px;
   background-color: #2ab2af;
-  flex-basis: 50%;
 }
 #bottom-left-block h4{
   color: white;
@@ -95,7 +94,6 @@ h2, h4, p{
   padding: 30px;
   background-color: #2ebfbd;
   color: white;
-  flex-basis: 50%;
 }
 #bottom-right-block h4{
   font-weight: 700;
@@ -115,5 +113,9 @@ h2, h4, p{
   
   #bottom-block{
     flex-direction: row;
+  }
+  
+  #bottom-left-block, #bottom-right-block{
+    flex-basis: 50%;
   }
 }
