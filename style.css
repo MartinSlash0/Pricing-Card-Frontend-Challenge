@@ -15,12 +15,15 @@ h2, h4, p{
 }
 
 #card{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
   border-radius: 5px;
   overflow: hidden;
 }
 #top-block{
-  width: 100%;
+   width: 100%;
   height: 45%;
   padding: 25px;
 }
